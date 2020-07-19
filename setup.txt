@@ -1,0 +1,10 @@
+need to run app:
+mongodb server
+robo 3T (UI for mongodb)
+Node js
+npm
+
+npm i uuid
+npm i body-parser morgan
+npm i cookie-parser
+npm i express-validator
