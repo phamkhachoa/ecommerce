@@ -1,0 +1,7 @@
+{ 
+    "_id" : ObjectId("5f158c623c5cb03418d76150"), 
+    "name" : "Node", 
+    "createdAt" : ISODate("2020-07-20T12:21:54.182+0000"), 
+    "updatedAt" : ISODate("2020-07-20T12:21:54.182+0000"), 
+    "__v" : NumberInt(0)
+}

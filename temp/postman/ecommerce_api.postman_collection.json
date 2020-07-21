@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6535bafb-a623-4681-ad70-c398aae607fa",
+		"_postman_id": "0d88d252-ba83-4e2a-b6cb-a15e346f1a57",
 		"name": "ecommerce_api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -104,6 +104,47 @@
 			"response": []
 		},
 		{
+			"name": "product_update_api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Node Book",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "My First Book",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/product/create/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "product_create_api",
 			"request": {
 				"method": "POST",
@@ -182,6 +223,26 @@
 		},
 		{
 			"name": "product_byid_api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/product/5f165f45520d3318ac835a78",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"5f165f45520d3318ac835a78"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category_byid_api",
 			"request": {
 				"method": "GET",
 				"header": [],

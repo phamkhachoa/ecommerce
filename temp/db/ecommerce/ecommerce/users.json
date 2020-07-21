@@ -1,0 +1,42 @@
+{ 
+    "_id" : ObjectId("5f148cd2f0469b3e44188d05"), 
+    "role" : NumberInt(1), 
+    "history" : [
+
+    ], 
+    "name" : "Admin", 
+    "email" : "admin@gmail.com", 
+    "salt" : "45280690-c9eb-11ea-9116-b7eb5f556e62", 
+    "hashed_password" : "5a1849ed6e389a31a39935548723df00996b7060", 
+    "createdAt" : ISODate("2020-07-19T18:11:30.305+0000"), 
+    "updatedAt" : ISODate("2020-07-19T18:11:30.305+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5f1491d70dd81f174cfe580b"), 
+    "role" : NumberInt(0), 
+    "history" : [
+
+    ], 
+    "name" : "hoapham", 
+    "email" : "phamkhachoabk@gmail.com", 
+    "salt" : "431d3b10-c9ee-11ea-bc49-a3aa3303f5d5", 
+    "hashed_password" : "88a5b313fc7d1e3b5a7cfdf6087e1ebfe6519b37", 
+    "createdAt" : ISODate("2020-07-19T18:32:55.365+0000"), 
+    "updatedAt" : ISODate("2020-07-19T18:32:55.365+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5f14b0d418623e37287d56fa"), 
+    "role" : NumberInt(0), 
+    "history" : [
+
+    ], 
+    "name" : "Hoa Pham", 
+    "email" : "phamkhachoabkf@gmail.com", 
+    "salt" : "bbad77e0-ca00-11ea-b62d-33332aa0e4fc", 
+    "hashed_password" : "d0634cfab1221beacb3227638e4232175fc1c31e", 
+    "createdAt" : ISODate("2020-07-19T20:45:08.577+0000"), 
+    "updatedAt" : ISODate("2020-07-19T20:45:08.577+0000"), 
+    "__v" : NumberInt(0)
+}
