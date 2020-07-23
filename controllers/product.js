@@ -3,6 +3,7 @@ const formidable = require('formidable');
 const _ = require('lodash');
 const fs = require('fs');
 const {errorHandler} = require('../helpers/dbErrorHandler');
+const { parseInt } = require('lodash');
 
 exports.create = (req, res) => {
     let form = new formidable.IncomingForm();
@@ -128,14 +129,14 @@ exports.update = (req, res) => {
 
 /**
  * sell / arrival
- * by sell = /product?sortBy=sold&order=desc&limit4
- * by arrival = /product?sortBy=createdAt&order=desc&limit4
+ * by sell = /products?sortBy=sold&order=desc&limit=4
+ * by arrival = /products?sortBy=createdAt&order=desc&limit=4
  * if no params are sent, then all products are returned
 */
 exports.list = (req, res) => {
     let order = req.query.order ? req.query.order : 'asc';
     let sortBy = req.query.sortBy ? req.query.sortBy : '_id';
-    let limit = req.query.limit ? req.query.limit : 5;
+    let limit = req.query.limit ? parseInt(req.query.limit) : 5;
 
     Product.find()
         .select("-photo")
@@ -148,6 +149,30 @@ exports.list = (req, res) => {
                     error: 'Product not found'
                 });
             }
-            res.send(products);
+            res.send(data);
         })
+}
+
+/**
+ * it will find the products based on the req product category
+ * other products that has the same category will be returned
+ */
+exports.listRelated = (req, res) => {
+    let limit = req.query.limit ? parseInt(req.query.limit) : 5;
+
+    Product.find({_id: {$ne: req.product}, category: req.product.category})
+    .limit(limit)
+    .populate('category', '_id name')
+    .exec((err, products) => {
+        if (err) {
+            return res.status(400).json({
+                error: 'Product not found'
+            })
+        }
+        products.map(product => {
+            product.photo = undefined
+        });
+        res.json(products);
+    })
+
 }

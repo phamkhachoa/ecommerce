@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0d88d252-ba83-4e2a-b6cb-a15e346f1a57",
+		"_postman_id": "a8236a84-7218-4b0d-845b-e7f2d8a9f749",
 		"name": "ecommerce_api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -223,6 +223,46 @@
 		},
 		{
 			"name": "product_byid_api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/product/5f165f45520d3318ac835a78",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"5f165f45520d3318ac835a78"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/product/5f165f45520d3318ac835a78",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"5f165f45520d3318ac835a78"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products related",
 			"request": {
 				"method": "GET",
 				"header": [],
