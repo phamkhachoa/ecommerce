@@ -5,3 +5,10 @@
     "updatedAt" : ISODate("2020-07-20T12:21:54.182+0000"), 
     "__v" : NumberInt(0)
 }
+{ 
+    "_id" : ObjectId("5f1939ca1266642744770a99"), 
+    "name" : "Cartoon", 
+    "createdAt" : ISODate("2020-07-23T07:18:34.688+0000"), 
+    "updatedAt" : ISODate("2020-07-23T07:18:34.688+0000"), 
+    "__v" : NumberInt(0)
+}

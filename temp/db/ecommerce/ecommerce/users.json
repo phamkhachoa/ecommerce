@@ -1,18 +1,4 @@
 { 
-    "_id" : ObjectId("5f148cd2f0469b3e44188d05"), 
-    "role" : NumberInt(1), 
-    "history" : [
-
-    ], 
-    "name" : "Admin", 
-    "email" : "admin@gmail.com", 
-    "salt" : "45280690-c9eb-11ea-9116-b7eb5f556e62", 
-    "hashed_password" : "5a1849ed6e389a31a39935548723df00996b7060", 
-    "createdAt" : ISODate("2020-07-19T18:11:30.305+0000"), 
-    "updatedAt" : ISODate("2020-07-19T18:11:30.305+0000"), 
-    "__v" : NumberInt(0)
-}
-{ 
     "_id" : ObjectId("5f1491d70dd81f174cfe580b"), 
     "role" : NumberInt(0), 
     "history" : [
@@ -38,5 +24,19 @@
     "hashed_password" : "d0634cfab1221beacb3227638e4232175fc1c31e", 
     "createdAt" : ISODate("2020-07-19T20:45:08.577+0000"), 
     "updatedAt" : ISODate("2020-07-19T20:45:08.577+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5f1939851266642744770a98"), 
+    "role" : NumberInt(1), 
+    "history" : [
+
+    ], 
+    "name" : "admin", 
+    "email" : "admin@gmail.com", 
+    "salt" : "8efd0e70-ccb4-11ea-ab98-e9079d0119c0", 
+    "hashed_password" : "ccd747a94798d1a15b780d2424c9a3196393cdb6", 
+    "createdAt" : ISODate("2020-07-23T07:17:25.339+0000"), 
+    "updatedAt" : ISODate("2020-07-23T07:17:25.339+0000"), 
     "__v" : NumberInt(0)
 }

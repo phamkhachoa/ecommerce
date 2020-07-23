@@ -282,6 +282,26 @@
 			"response": []
 		},
 		{
+			"name": "products related categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/product/categories",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "category_byid_api",
 			"request": {
 				"method": "GET",

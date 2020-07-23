@@ -76,3 +76,7 @@ exports.update = (req, res) => {
         })
     });
 }
+
+exports.listCategories = (req, res) => {
+    
+}
